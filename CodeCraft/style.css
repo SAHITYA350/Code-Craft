@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4)), url('image/5675771.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.icon .logo {
+    font-size: 40px;
+    color: rgb(231, 65, 10);
+    font-weight: bold;
+    animation: logoAnimation 2s infinite; /* Animation only on the logo */
+}
+
+@keyframes logoAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    20% { transform: scale(1.1); opacity: 0.8; }
+    40% { transform: scale(1.2); opacity: 0.6; letter-spacing: 2px; }
+    60% { transform: scale(1.1); opacity: 0.8; letter-spacing: 1px; }
+    80% { transform: scale(1); opacity: 1; }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.menu ul li a:hover {
+    color: darkorange;
+}
+
+.lo button {
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 3s ease;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lo button:hover {
+    background: transparent;
+    color: whitesmoke;
+}
+
+
+.content {
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+}
+
+.content h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: darkorange;
+    margin-bottom: 40px;
+}
+
+.join a {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.join a:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.search {
+    margin-bottom: 30px;
+}
+
+.srh {
+    width: 300px;
+    padding: 10px;
+    border-radius: 70px;
+    border: 1px solid darkorange;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 16px;
+    
+}
+
+.srh:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 70px;
+  box-shadow: 1px 1px  20px lightcoral;
+  margin-left: -0.5px;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .srh {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .join a {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .srh {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .join a {
+        padding: 8px 15px;
+    }
+}

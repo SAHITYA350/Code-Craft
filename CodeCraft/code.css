@@ -1,0 +1,327 @@
+/* code.css */
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* code.css */
+
+/* ... (General styles, body, navbar, logo, menu, etc. -  Keep these as before) */
+
+.main {
+    display: flex;
+    flex-direction: row; /* Arrange icon and code side by side */
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4)), url('image/5675771.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    padding: 20px; /* Add some padding to the main container */
+    gap: 20px; /* Add spacing between icon and code sections */
+}
+
+/* Icon Section (Left Side) */
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Or a percentage if you prefer */
+    /* Remove margin-top and margin-bottom */
+}
+
+/* Code Examples Section (Right Side) */
+.code-examples {
+    padding: 20px;
+    max-width: 70%; /* Adjust as needed, use a percentage */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allows the code section to take up available space */
+    overflow-x: auto;
+}
+
+/* ... (Rest of your CSS - content, search, footer, responsive, etc. - Keep these as before) */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack icon and code vertically on smaller screens */
+        align-items: center; /* Center horizontally */
+    }
+
+    .icon {
+        width: 90%; /* Make the icon section full width */
+        margin-bottom: 20px; /* Add space below the icon section */
+    }
+
+    .code-examples {
+        max-width: 90%; /* Make the code section full width */
+    }
+
+    /* ... (Other responsive styles) */
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%; /* Ensure navbar spans full width */
+}
+
+.icon .logo {
+    font-size: 40px;
+    color: rgb(231, 65, 10);
+    font-weight: bold;
+    animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    20% { transform: scale(1.1); opacity: 0.8; }
+    40% { transform: scale(1.2); opacity: 0.6; letter-spacing: 2px; }
+    60% { transform: scale(1.1); opacity: 0.8; letter-spacing: 1px; }
+    80% { transform: scale(1); opacity: 1; }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .menu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+  .menu ul li a:hover {
+    color: darkorange;
+  }
+  
+
+.lo button {
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Reduced transition time */
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px; /* Keep the margin */
+}
+
+.lo button:hover {
+    color: darkorange; /* Changed hover color to orange */
+}
+
+
+
+/* Icon Section (Left Side) */
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px; /* Space from top */
+    margin-bottom: 20px; /* Space below */
+
+}
+
+.icon a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.icon a:hover {
+    color: darkorange;
+}
+
+
+/* Code Examples Section (Right Side) */
+.code-examples {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.language-section h2 {
+    color: darkorange; /* Orange headings */
+}
+
+pre {
+    background-color: #333; /* Darker code background */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #eee; /* Light text color for code */
+}
+
+code {
+    display: block;
+}
+
+
+/* Content Section (Below Navbar) */
+.content {
+    text-align: left;
+    padding: 50px;
+    width: 80%; /* Limit content width for better readability */
+    margin: 20px auto; /* Center the content */
+}
+
+.content h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: darkorange;
+    margin-bottom: 20px;
+}
+
+.join a {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.join a:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+
+/* Search Bar */
+.search {
+    margin-bottom: 30px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center the search bar */
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto;
+}
+
+.srh {
+    width: 100%; /* Make the input take full width of the container */
+    padding: 10px;
+    border-radius: 70px;
+    border: 1px solid darkorange;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 16px;
+    flex-grow: 1; /* Allow input to grow */
+}
+
+.srh:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 70px;
+    box-shadow: 1px 1px 20px lightcoral;
+    margin-left: -6px;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 20px;  /* Reduced margin */
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: darkorange;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px; /* Reduced padding */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lo button {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin */
+    }
+
+    .content {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .icon {
+        width: 90%; /* Make icon section responsive */
+    }
+}

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .main {
+    height: 170vh;
+  width: 140%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4)), url('image/5675771.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
+  .icon .logo {
+    font-size: 40px;
+    color: rgb(231, 65, 10);
+    font-weight: bold;
+    animation: logoAnimation 2s infinite; /* Animation only on the logo */
+  }
+  
+  @keyframes logoAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    20% { transform: scale(1.1); opacity: 0.8; }
+    40% { transform: scale(1.2); opacity: 0.6; letter-spacing: 2px; }
+    60% { transform: scale(1.1); opacity: 0.8; letter-spacing: 1px; }
+    80% { transform: scale(1); opacity: 1; }
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .menu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+  .menu ul li a:hover {
+    color: darkorange;
+  }
+  
+  .lo button {
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 3s ease;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -290px;
+  }
+  
+  .lo button:hover {
+    background: transparent;
+    color: whitesmoke;
+  }
+  
+  .content {
+    color: whitesmoke;
+    text-align: left;
+    padding: 50px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .content h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .content h2 {
+    font-size: 30px;
+    color: rgb(205, 11, 76);
+    margin-bottom: 20px;
+  }
+  
+  .join a {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .join a:hover {
+    background-color: darkorange;
+    color: white;
+  }
+  
+
+  .search {
+    margin-bottom: 30px;
+}
+
+.srh {
+    width: 300px;
+    padding: 10px;
+    border-radius: 70px;
+    border: 1px solid darkorange;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.srh:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 70px;
+  box-shadow: 1px 1px  20px lightcoral;
+  margin-left: -6px;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+
+  main{
+    height: auto;
+    width: auto;
+margin-top:auto;
+  }
+
+  footer {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: darkorange;
+}
+  
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+  
+  .btn1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 90px;
+    background-color: darkorange;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 30px;
+  }
+  
+  
+  .btn1:hover {
+    background: rgb(241, 62, 8);
+  }
+  .link {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 22px;
+    margin-bottom: 12px;
+  }
+  
+  .liw {
+  
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+    margin-bottom: 90px;
+  }
+  
+  .icon a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+  
+  .icon a:hover {
+    color: darkorange;
+  }
+
+  
+  /* Responsive Design */
+
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+}
+  
